@@ -1,15 +1,19 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import numpy as np
 import pandas as pd
 
 
 BUCKET_TENORS = {
-    "0-2Y": 1.0,
-    "2-5Y": 3.0,
-    "5-10Y": 7.0,
-    "10-15Y": 12.0,
-    "15-25Y": 20.0,
+    "0-1Y": 0.5,
+    "1-2Y": 1.5,
+    "2-3Y": 2.5,
+    "3-5Y": 4.0,
+    "5-7Y": 6.0,
+    "7-10Y": 8.5,
+    "10-15Y": 12.5,
+    "15-20Y": 17.5,
+    "20Y+": 25.0,
 }
 
 
@@ -24,7 +28,7 @@ def calculate_bond_scenario_pnl(
 
     Approximation:
 
-        ΔP ≈ MV × [-D × Δy + 0.5 × C × (Δy)^2]
+        Î”P â‰ˆ MV Ã— [-D Ã— Î”y + 0.5 Ã— C Ã— (Î”y)^2]
 
     Parameters
     ----------
