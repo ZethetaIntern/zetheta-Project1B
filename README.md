@@ -26,6 +26,9 @@ The project combines:
 - Interactive Streamlit dashboard
 - Automated regression tests
 
+Diagram:  <img width="878" height="1029" alt="image" src="https://github.com/user-attachments/assets/39237bd4-4415-43ba-a85c-c31fd90e61ab" />
+
+
 ## Architecture
 
 ```text
